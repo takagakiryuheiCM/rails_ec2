@@ -21,7 +21,7 @@ class TMemosController < ApplicationController
 
   # POST /t_memos or /t_memos.json
   def create
-    @t_memo = TMemo.new(t_memo_params).memo
+    @t_memo = TMemo.new(memo: t_memo_params)
 
     respond_to do |format|
       if @t_memo.save
