@@ -1,0 +1,2 @@
+module TMemosHelper
+end

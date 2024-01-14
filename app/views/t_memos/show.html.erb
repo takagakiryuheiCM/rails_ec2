@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @t_memo %>
+
+
+<div>
+  <%= link_to "編集", edit_t_memo_path(@t_memo) %> |
+  <%= link_to "メモ一覧に戻る", t_memos_path %>
+
+  <%= button_to "削除", @t_memo, method: :delete %>
+</div>

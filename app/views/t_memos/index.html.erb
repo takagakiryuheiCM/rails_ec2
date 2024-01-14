@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>メモ一覧</h1>
+
+<div id="t_memos">
+  <% @t_memos.each do |t_memo| %>
+    <%= render t_memo %>
+    <p>
+      <%= link_to "詳細", t_memo %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "新規作成", new_t_memo_path %>

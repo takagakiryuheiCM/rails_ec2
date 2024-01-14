@@ -1,0 +1,2 @@
+class TMemo < ApplicationRecord
+end
