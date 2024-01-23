@@ -1,5 +1,5 @@
-class TMemosController < ApplicationController
+class HealthController < ApplicationController
     def show
-        render plain: 'OK'
+      render plain: 'OK'
     end
 end
